@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 36rem;
+  min-width: 30rem;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #288D49;
+  height: 12rem;
+  width: 100%;
+  padding: 2.8rem 6.3rem 3.3rem 2.1rem;
+}
+
+nav {
+  display: none;
+}
+
+main {
+  background-color: #39B060;
+}
+
+.modalidade {
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 3.2rem;
+  font-weight: normal;
+}
+
+span, h1{
+  font-family: 'Indie Flower', cursive;
+  font-size: 3.2rem;
+  font-weight: normal;
+  color: #FFFF00;
+}
+
+.logoSubbuteo img {
+  max-width:27.6rem;
+  max-height:5.9rem;
+}
+
+.subbuteoFanatics {
+  text-align: center;
+  padding:1.2rem;
+}
+
+.subbuteoFanatics img {
+  max-width: 22.2rem;
+  max-height: 37.4rem;
+}
+
+footer {
+  display:flex;
+  background-color: #288D49;
+  height: 4rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (min-width: 950px) {
+  .page {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20rem;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  ul {
+    display: flex;
+    gap: 4.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 2.4rem;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  ul li a:hover {
+    color: #FFFF00;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15.2rem;
+  }
+
+  .modalidade {
+    width: 60rem;
+    height: auto;
+    font-size: 5.4rem;
+    padding-bottom: 4rem;
+  }
+
+  span, h1, p{
+    font-size: 6.4rem;
+  }
+
+  .subbuteoFanatics img {
+    max-width: 35.3rem;
+    max-height: 100%;
+  }
+
+  .logoSubbuteo img {
+    padding: 1.2rem 1.2rem 1.2rem 5rem;
+    max-width:45.8rem;
+    max-height:9.8rem;
+  }
+
+  footer{
+    font-size: 1.6rem;
+  } 
+}
+
+@media(max-width: 980px) {
+  nav {
+    display: none;
+  }
+}
+
