@@ -32,29 +32,28 @@ body {
   background-color: #39B060;
 }
 
-.modalidade {
+span, h1, p{
   text-align: center;
   font-family: 'Indie Flower', cursive;
-  font-size: clamp(3rem, 1rem + 5vw, 5rem);
+  font-size: clamp(3rem, 4rem, 5rem);
   font-weight: normal;
-
 }
 
 span, h1{
   color: #FFFF00;
+  font-size: clamp(3rem, 4rem, 5rem);
 }
 
 .logoSubbuteo img {
+  display: flex;
+  padding: 1.2rem 1.2rem 1.2rem 2rem;
   width:100%;
   height:auto;
 }
 
-.subbuteoFanatics {
+.subbuteoFanatics img {
   text-align: center;
   padding:1.2rem;
-}
-
-.subbuteoFanatics img {
   width: 100%;
   height: auto;
 }
@@ -67,7 +66,7 @@ footer {
   align-items: center;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem;
+  font-size: clamp(0.8rem, 1.2rem, 1.4rem);
   font-weight: bold;
 }
 
@@ -115,14 +114,13 @@ footer {
   }
 
   .modalidade {
-    width: 50rem;
+    width: 60rem;
     height: auto;
-    font-size: 5.4rem;
     padding-bottom: 4rem;
   }
 
   span, h1, p{
-    font-size: clamp(3rem, 1rem + 5vw, 5rem);
+    font-size: clamp(3rem, 6rem, 7rem);
   }
 
   .subbuteoFanatics img {
@@ -132,12 +130,12 @@ footer {
 
   .logoSubbuteo img {
     padding: 1.2rem 1.2rem 1.2rem 2rem;
-    max-width:45.8rem;
+    width:45.8rem;
     max-height:9.8rem;
   }
 
   footer{
-    font-size: 1.6rem;
+    font-size: clamp(1rem, 1.2rem, 1.6rem);
   } 
 }
 
