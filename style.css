@@ -9,44 +9,44 @@
 }
 
 .page {
+  min-width: 33rem;
   margin: 0 auto;
-  max-width: 36rem;
-  min-width: 30rem;
-  min-height: 100vh;
+
 }
 
 header {
+  display: flex;
   background-color: #288D49;
   height: 12rem;
-  width: 100%;
-  padding: 2.8rem 6.3rem 3.3rem 2.1rem;
+  justify-content: center;
+  align-items: center;
+
 }
 
 nav {
   display: none;
 }
 
-main {
+
+body {
   background-color: #39B060;
 }
 
 .modalidade {
   text-align: center;
   font-family: 'Indie Flower', cursive;
-  font-size: 3.2rem;
+  font-size: clamp(3rem, 1rem + 5vw, 5rem);
   font-weight: normal;
+
 }
 
 span, h1{
-  font-family: 'Indie Flower', cursive;
-  font-size: 3.2rem;
-  font-weight: normal;
   color: #FFFF00;
 }
 
 .logoSubbuteo img {
-  max-width:27.6rem;
-  max-height:5.9rem;
+  width:100%;
+  height:auto;
 }
 
 .subbuteoFanatics {
@@ -55,8 +55,8 @@ span, h1{
 }
 
 .subbuteoFanatics img {
-  max-width: 22.2rem;
-  max-height: 37.4rem;
+  width: 100%;
+  height: auto;
 }
 
 footer {
@@ -71,10 +71,9 @@ footer {
   font-weight: bold;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 700px) {
   .page {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 117rem;
   }
 
   header {
@@ -86,19 +85,17 @@ footer {
 
   nav{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-right: 20rem;
+    padding-right: 2rem;
     font-family: 'Roboto', sans-serif;
   }
 
   ul {
     display: flex;
-    gap: 4.5rem;
+    gap: 3rem;
+    padding-right: 9rem;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 2.4rem;
+    font-size: clamp(0.8rem, 1rem + 5vw, 1.8rem);
   }
   
   ul li a {
@@ -114,27 +111,27 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15.2rem;
+    gap: 6rem;
   }
 
   .modalidade {
-    width: 60rem;
+    width: 50rem;
     height: auto;
     font-size: 5.4rem;
     padding-bottom: 4rem;
   }
 
   span, h1, p{
-    font-size: 6.4rem;
+    font-size: clamp(3rem, 1rem + 5vw, 5rem);
   }
 
   .subbuteoFanatics img {
-    max-width: 35.3rem;
-    max-height: 100%;
+    width: 100%;
+    height: auto;
   }
 
   .logoSubbuteo img {
-    padding: 1.2rem 1.2rem 1.2rem 5rem;
+    padding: 1.2rem 1.2rem 1.2rem 2rem;
     max-width:45.8rem;
     max-height:9.8rem;
   }
