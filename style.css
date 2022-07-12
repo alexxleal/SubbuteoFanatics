@@ -18,15 +18,12 @@ header {
   display: flex;
   background-color: #288D49;
   height: 12rem;
-  justify-content: center;
   align-items: center;
-
 }
 
 nav {
   display: none;
 }
-
 
 body {
   background-color: #39B060;
@@ -41,11 +38,9 @@ span, h1, p{
 
 span, h1{
   color: #FFFF00;
-  font-size: clamp(3rem, 4rem, 5rem);
 }
 
 .logoSubbuteo img {
-  display: flex;
   padding: 1.2rem 1.2rem 1.2rem 2rem;
   width:100%;
   height:auto;
@@ -72,14 +67,14 @@ footer {
 
 @media (min-width: 700px) {
   .page {
-    max-width: 117rem;
+    max-width: auto;
+    margin: 0 auto;
   }
 
   header {
-    padding: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   nav{
@@ -92,9 +87,10 @@ footer {
   ul {
     display: flex;
     gap: 3rem;
-    padding-right: 9rem;
     list-style: none;
-    font-size: clamp(0.8rem, 1rem + 5vw, 1.8rem);
+    font-size: clamp(0.8rem, 1.6rem, 1.8rem);
+    width: 100%;
+    height: auto;
   }
   
   ul li a {
@@ -114,7 +110,7 @@ footer {
   }
 
   .modalidade {
-    width: 60rem;
+    width: clamp(40em, 60em + 6vw, 70em);
     height: auto;
     padding-bottom: 4rem;
   }
@@ -130,8 +126,8 @@ footer {
 
   .logoSubbuteo img {
     padding: 1.2rem 1.2rem 1.2rem 2rem;
-    width:45.8rem;
-    max-height:9.8rem;
+    width: 100%;
+    height: auto;
   }
 
   footer{
@@ -139,9 +135,5 @@ footer {
   } 
 }
 
-@media(max-width: 980px) {
-  nav {
-    display: none;
-  }
-}
+
 
