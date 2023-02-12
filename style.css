@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62,5%;
+}
+
+body {
+    background:#39B060;
+    font-family: 'Indie Flower', cursive;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background: #288D49;
+}
+
+h1 {
+    font-size: 32px;
+    color: #FFFF00;
+}
+
+span {
+    color: #FFFF00;
+}
+
+.emphasis {
+    display: flexbox;
+    text-align: center;
+    margin: 1.6rem 0;
+    font-size: 32px;
+    line-height: 47px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.pele {
+    display: flexbox;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    min-width: 100vw;
+    text-align: center;
+    padding: 1rem;
+    background: #288D49;  
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;  
+}
+
+
+
